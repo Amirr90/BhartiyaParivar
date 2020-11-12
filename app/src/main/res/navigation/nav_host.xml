@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host"
+    app:startDestination="@id/termsandConditionFragment">
+
+    <fragment
+        android:id="@+id/termsandConditionFragment"
+        android:name="com.e.bhartiyaparivar.fragment.TermsAndConditionFragment"
+        android:label="fragment_termsand_condition"
+        tools:layout="@layout/fragment_termsand_condition" >
+        <action
+            android:id="@+id/action_termsandConditionFragment_to_loginScreenFragment"
+            app:destination="@id/loginScreenFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginScreenFragment"
+        android:name="com.e.bhartiyaparivar.fragment.LoginScreenFragment"
+        android:label="fragment_login_screen"
+        tools:layout="@layout/fragment_login_screen" >
+        <action
+            android:id="@+id/action_loginScreenFragment_to_submitOtpFragment"
+            app:destination="@id/submitOtpFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/submitOtpFragment"
+        android:name="com.e.bhartiyaparivar.fragment.SubmitOtpFragment"
+        android:label="fragment_submit_otp"
+        tools:layout="@layout/fragment_submit_otp" >
+        <action
+            android:id="@+id/action_submitOtpFragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.e.bhartiyaparivar.fragment.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>
