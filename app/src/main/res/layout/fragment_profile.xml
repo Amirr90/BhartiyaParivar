@@ -5,147 +5,157 @@
     android:layout_height="match_parent"
     tools:context=".fragment.ProfileFragment">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:orientation="vertical"
-        android:padding="15dp">
+        android:layout_above="@+id/btnNext"
+        android:layout_alignParentTop="true">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="3">
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:padding="15dp">
 
-            <TextView
-                android:layout_width="0dp"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:fontFamily="@font/lato"
-                android:padding="10dp"
-                android:text="@string/name"
-                android:textColor="@android:color/black"
-                android:textSize="20dp" />
+                android:orientation="horizontal"
+                android:weightSum="3">
 
-            <EditText
-                android:layout_width="0dp"
-                android:layout_height="35dp"
-                android:layout_weight="2"
-                android:background="@drawable/rectangle_border"
-                android:inputType="textPersonName"
-                android:padding="8dp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/lato"
+                    android:padding="10dp"
+                    android:text="@string/name"
+                    android:textColor="@android:color/black"
+                    android:textSize="17dp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/rectangle_border"
+                    android:inputType="textPersonName"
+                    android:padding="8dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/lato"
+                    android:padding="10dp"
+                    android:text="@string/age"
+                    android:textColor="@android:color/black"
+                    android:textSize="17dp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/rectangle_border"
+                    android:inputType="textPersonName"
+                    android:padding="8dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/lato"
+                    android:padding="10dp"
+                    android:text="@string/gender"
+                    android:textColor="@android:color/black"
+                    android:textSize="17dp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/rectangle_border"
+                    android:inputType="textPersonName"
+                    android:padding="8dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/lato"
+                    android:padding="10dp"
+                    android:text="@string/pin_code"
+                    android:textColor="@android:color/black"
+                    android:textSize="17dp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/rectangle_border"
+                    android:inputType="textPersonName"
+                    android:padding="8dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/lato"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/proffession"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/rectangle_border"
+                    android:inputType="textPersonName"
+                    android:padding="8dp" />
+            </LinearLayout>
         </LinearLayout>
+    </ScrollView>
 
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal"
-            android:weightSum="3">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:fontFamily="@font/lato"
-                android:padding="10dp"
-                android:text="@string/age"
-                android:textColor="@android:color/black"
-                android:textSize="20dp" />
-
-            <EditText
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:background="@drawable/rectangle_border"
-                android:inputType="textPersonName"
-                android:padding="8dp" />
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal"
-            android:weightSum="3">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:fontFamily="@font/lato"
-                android:padding="10dp"
-                android:text="@string/gender"
-                android:textColor="@android:color/black"
-                android:textSize="20dp" />
-
-            <EditText
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:background="@drawable/rectangle_border"
-                android:inputType="textPersonName"
-                android:padding="8dp" />
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal"
-            android:weightSum="3">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:fontFamily="@font/lato"
-                android:padding="10dp"
-                android:text="@string/pin_code"
-                android:textColor="@android:color/black"
-                android:textSize="20dp" />
-
-            <EditText
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:background="@drawable/rectangle_border"
-                android:inputType="textPersonName"
-                android:padding="8dp" />
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal"
-            android:weightSum="3">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:fontFamily="@font/lato"
-                android:padding="10dp"
-                android:text="@string/proffession"
-                android:textColor="@android:color/black"
-                android:textSize="20dp" />
-
-            <EditText
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:background="@drawable/rectangle_border"
-                android:inputType="textPersonName"
-                android:padding="8dp" />
-        </LinearLayout>
-    </LinearLayout>
 
     <Button
         android:id="@+id/btnNext"
@@ -163,5 +173,5 @@
         android:fontFamily="@font/lato"
         android:text="@string/save"
         android:textColor="@android:color/white"
-        android:textSize="20dp" />
+        android:textSize="17dp" />
 </RelativeLayout>

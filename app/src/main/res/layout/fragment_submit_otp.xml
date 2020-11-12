@@ -7,6 +7,7 @@
 
 
     <LinearLayout
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
@@ -20,7 +21,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/lato"
             android:padding="10dp"
-            android:text="verify +919044865611"
+            android:text="Verify +919044865611"
             android:textColor="@color/orange"
             android:textSize="20dp"
             android:textStyle="bold" />
@@ -29,21 +30,22 @@
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:fontFamily="@font/lato"
             android:gravity="center"
             android:text="@string/waiting_otp_text"
             android:textColor="@android:color/black"
-            android:textSize="16dp"
+            android:textSize="14dp"
             android:textStyle="bold" />
 
         <EditText
             android:id="@+id/editTextTextPersonName3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="15dp"
             android:ems="6"
             android:maxLength="6"
+            android:textSize="14dp"
             android:gravity="center"
             android:hint="123456"
             android:inputType="textPersonName" />
@@ -57,27 +59,27 @@
             android:padding="10dp"
             android:text="@string/enter_otp_string"
             android:textColor="@android:color/black"
-            android:textSize="16dp" />
+            android:textSize="14dp" />
 
         <TextView
             android:id="@+id/textView7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:drawableLeft="@drawable/ic_baseline_sms_24"
             android:drawablePadding="10dp"
             android:gravity="center_vertical"
             android:padding="10dp"
             android:text="@string/give_miss_call"
             android:textColor="@android:color/black"
-            android:textSize="20dp" />
+            android:textSize="16dp" />
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="15dp"
             android:layout_marginRight="10dp"
             android:background="@color/grey" />
 
@@ -86,30 +88,32 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="15dp"
             android:drawableLeft="@drawable/ic_baseline_call_24"
             android:drawablePadding="10dp"
             android:gravity="center_vertical"
             android:padding="10dp"
             android:text="@string/call_me"
             android:textColor="@android:color/black"
-            android:textSize="20dp" />
+            android:textSize="16dp" />
+
+        <Button
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="@font/lato"
+            android:textSize="17dp"
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/rectangle_round"
+            android:backgroundTint="@color/orange"
+            android:text="@string/next"
+            android:textColor="@android:color/white" />
     </LinearLayout>
 
 
-    <Button
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30dp"
-        android:layout_alignParentBottom="true"
-        android:fontFamily="@font/lato"
-        android:textSize="20dp"
-        android:id="@+id/btnNext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="35dp"
-        android:background="@drawable/rectangle_round"
-        android:backgroundTint="@color/orange"
-        android:text="@string/next"
-        android:textColor="@android:color/white" />
+
 </RelativeLayout>

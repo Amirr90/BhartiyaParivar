@@ -13,13 +13,15 @@
         tools:context=".SplashScreen">
 
         <ImageView
+            android:layout_centerInParent="true"
             android:id="@+id/imageView4"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:layout_marginTop="200dp"
-            android:src="@drawable/ic_launcher_foreground" />
+            android:src="@drawable/app_icon" />
 
         <TextView
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -32,7 +34,7 @@
 
         <com.airbnb.lottie.LottieAnimationView
             android:layout_marginTop="30dp"
-            android:layout_below="@+id/textView4"
+            android:layout_below="@+id/imageView4"
             android:id="@+id/animation_view"
             android:layout_width="100dp"
             android:layout_height="100dp"
