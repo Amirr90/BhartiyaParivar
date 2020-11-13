@@ -34,7 +34,6 @@ public class SignUpActivity extends AppCompatActivity {
         super.onStart();
         instance = this;
         navController = Navigation.findNavController(this, R.id.nav_host_fragment);
-        //NavigationUI.setupActionBarWithNavController(this, navController);
     }
 
     @Override
