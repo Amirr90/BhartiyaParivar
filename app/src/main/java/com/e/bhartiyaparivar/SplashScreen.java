@@ -42,7 +42,7 @@ public class SplashScreen extends AppCompatActivity {
             }
         }.start();
         mainBinding.imageView4.startAnimation(aniFade);
-        mainBinding.textView4.startAnimation(aniFade);
+        //mainBinding.textView4.startAnimation(aniFade);
 
     }
 

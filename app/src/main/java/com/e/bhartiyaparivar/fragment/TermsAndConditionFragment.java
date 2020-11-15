@@ -16,6 +16,8 @@ import androidx.navigation.Navigation;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 import com.e.bhartiyaparivar.R;
 import com.e.bhartiyaparivar.databinding.FragmentTermsandConditionBinding;
@@ -28,6 +30,7 @@ public class TermsAndConditionFragment extends Fragment {
     private static final int MULTIPLE_PERMISSIONS = 101;
     FragmentTermsandConditionBinding termsandConditionBinding;
     NavController navController;
+
 
     String[] permissions = new String[]{
             Manifest.permission.READ_CONTACTS,
@@ -54,10 +57,12 @@ public class TermsAndConditionFragment extends Fragment {
         termsandConditionBinding.btnAgree.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (checkPermissions())
+                if (checkPermissions()) {
                     navController.navigate(R.id.action_termsandConditionFragment_to_loginScreenFragment);
+                }
             }
         });
+
     }
 
     private boolean checkPermissions() {

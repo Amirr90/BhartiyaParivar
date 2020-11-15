@@ -6,6 +6,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.LifecycleOwner;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
@@ -55,7 +56,7 @@ public class LoginScreenFragment extends Fragment {
 
     private void setSpinner() {
         ArrayList<String> arrayList = new ArrayList<>();
-        arrayList.add("INDIA");
+        arrayList.add("BHARAT");
         arrayList.add("USA");
         arrayList.add("CHINA");
         arrayList.add("NEPAL");
@@ -64,5 +65,6 @@ public class LoginScreenFragment extends Fragment {
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(requireActivity(), android.R.layout.simple_spinner_item, arrayList);
         arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         loginScreenBinding.spinner.setAdapter(arrayAdapter);
+        loginScreenBinding.spinner.setSelection(0);
     }
 }
