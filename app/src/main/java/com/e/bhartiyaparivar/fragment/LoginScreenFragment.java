@@ -1,5 +1,6 @@
 package com.e.bhartiyaparivar.fragment;
 
+import android.app.ProgressDialog;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -14,22 +15,29 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Toast;
 
 import com.e.bhartiyaparivar.R;
 import com.e.bhartiyaparivar.databinding.FragmentLoginScreenBinding;
+import com.e.bhartiyaparivar.interfaces.ApiInterface;
+import com.e.bhartiyaparivar.model.Login;
+import com.e.bhartiyaparivar.model.SendOTP;
+import com.e.bhartiyaparivar.utils.ApiUtils;
 
 import java.util.ArrayList;
+
+import static com.e.bhartiyaparivar.utils.Utils.MOBILE_NUMBER_KEY;
 
 public class LoginScreenFragment extends Fragment {
 
     FragmentLoginScreenBinding loginScreenBinding;
     NavController navController;
-    String mobile;
+    ProgressDialog dialog;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         loginScreenBinding = FragmentLoginScreenBinding.inflate(getLayoutInflater());
         return loginScreenBinding.getRoot();
     }
@@ -38,6 +46,7 @@ public class LoginScreenFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        dialog = new ProgressDialog(requireActivity());
         navController = Navigation.findNavController(view);
         setSpinner();
 
@@ -45,13 +54,43 @@ public class LoginScreenFragment extends Fragment {
         loginScreenBinding.btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String mobileNumber = loginScreenBinding.etMobileNumber.getText().toString();
+                if (mobileNumber.length() == 10) {
+                    sendOTP(mobileNumber);
+                } else {
+                    Toast.makeText(requireActivity(), "Please enter valid mobile number", Toast.LENGTH_SHORT).show();
+                }
 
-
-                Bundle bundle = new Bundle();
-                bundle.putString("mobile", "+919044865611");
-                navController.navigate(R.id.action_loginScreenFragment_to_submitOtpFragment, bundle);
             }
         });
+
+
+    }
+
+    private void sendOTP(final String mobileNumber) {
+
+        dialog.setMessage("Sending OTP...");
+        SendOTP OTPModel = new SendOTP(mobileNumber);
+
+        ApiUtils.generateOTP(OTPModel, new ApiInterface() {
+            @Override
+            public void onSuccess(Object ojb) {
+                dialog.dismiss();
+                Toast.makeText(requireActivity(), "OTP sent successfully to mobile number " + mobileNumber, Toast.LENGTH_SHORT).show();
+                Bundle bundle = new Bundle();
+                bundle.putString(MOBILE_NUMBER_KEY, mobileNumber);
+                navController.navigate(R.id.action_loginScreenFragment_to_submitOtpFragment, bundle);
+            }
+
+            @Override
+            public void onFailed(String msg) {
+                dialog.dismiss();
+                Toast.makeText(requireActivity(), msg, Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+
     }
 
     private void setSpinner() {
