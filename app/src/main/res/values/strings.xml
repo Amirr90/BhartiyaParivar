@@ -23,4 +23,20 @@
     <string name="if_you_dont_get">if you don\'t get SMS then</string>
     <string name="enter">Enter</string>
     <string name="slogen_hindi">"कृपया ऐसी भाषा चुनें जिसे आप आराम से पढ़ और समझ सकें "</string>
+    <string name="profile">Profile</string>
+    <string name="videos">Videos</string>
+    <string name="series">Series</string>
+    <string name="trending">Trending</string>
+    <string name="books">Books</string>
+    <string name="chutki">Chutki</string>
+    <string name="donate">Donate</string>
+    <string name="join_us">Join Us</string>
+    <string name="about_us">About Us</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="choose_language">Choose Language</string>
+    <string name="advertisement">Advertisement</string>
+    <string name="notification">Notifications</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="share_app">Share App</string>
+    <string name="frequently_ask">FAQ</string>
 </resources>

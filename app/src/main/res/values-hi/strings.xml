@@ -23,4 +23,20 @@
     <string name="if_you_dont_get">अगर आपको एसएमएस नहीं मिलता है तो</string>
     <string name="enter">दर्ज</string>
     <string name="slogen_hindi">कृपया ऐसी भाषा चुनें जिसे आप आराम से पढ़ और समझ सकें </string>
+    <string name="profile">प्रोफ़ाइल</string>
+    <string name="videos">वीडियो</string>
+    <string name="series">श्रृंखला</string>
+    <string name="trending">रुझान</string>
+    <string name="books">पुस्तकें</string>
+    <string name="chutki">छुटकी</string>
+    <string name="donate">दान करना</string>
+    <string name="join_us">हमसे जुड़ें</string>
+    <string name="about_us">हमारे बारे में</string>
+    <string name="contact_us">संपर्क करें</string>
+    <string name="choose_language">Choose Language</string>
+    <string name="advertisement">विज्ञापन</string>
+    <string name="notification">सूचनाएं</string>
+    <string name="dark_mode">डार्क मोड</string>
+    <string name="share_app">ऐप शेयर करें</string>
+    <string name="frequently_ask">सामान्य प्रश्न</string>
 </resources>
