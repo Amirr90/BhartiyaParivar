@@ -101,7 +101,7 @@
                 android:paddingTop="20dp"
                 android:paddingRight="30dp"
                 android:paddingBottom="20dp"
-                android:text="Hindi"
+                android:text="English"
                 android:textSize="22dp" />
         </RadioGroup>
 

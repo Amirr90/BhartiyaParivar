@@ -1,15 +1,19 @@
 package com.e.bhartiyaparivar;
 
+import android.content.res.Configuration;
+import android.content.res.Resources;
+import android.os.Build;
+import android.os.Bundle;
+import android.util.DisplayMetrics;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
-import androidx.navigation.ui.NavigationUI;
-
-import android.app.Activity;
-import android.os.Bundle;
 
 import com.e.bhartiyaparivar.databinding.ActivitySignupBinding;
+
+import java.util.Locale;
 
 public class SignUpActivity extends AppCompatActivity {
 
@@ -34,7 +38,12 @@ public class SignUpActivity extends AppCompatActivity {
         super.onStart();
         instance = this;
         navController = Navigation.findNavController(this, R.id.nav_host_fragment);
+
+
+
     }
+
+
 
     @Override
     public boolean onSupportNavigateUp() {

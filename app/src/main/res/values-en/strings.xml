@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">BhartiyaParivar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="terms_condition">Our Terms and Conditions template will get you started with creating your own custom Terms and Conditions agreement.  This Terms and Conditions template is free to download and use for your website or mobile app.</string>
+    <string name="verify_number">Verify your phone number</string>
+    <string name="send_msg_string">We will send an SMS message to verify your phone number.  Enter your country code and phone number</string>
+    <string name="phone_number">Phone number</string>
+    <string name="next">Next</string>
+    <string name="waiting_otp_text">Waiting to automatically detect an SMS sent to</string>
+    <string name="enter_otp_string">Enter 4-digits code</string>
+    <string name="give_miss_call">Give us a miss call to verify</string>
+    <string name="call_me">Call me</string>
+    <string name="name">Your Name</string>
+    <string name="age">Your Age</string>
+    <string name="gender">Your Gender</string>
+    <string name="pin_code">Your Postal Pin Code(6 Digit)</string>
+    <string name="proffession">Your Profession</string>
+    <string name="save">Save</string>
+    <string name="terms_and_privacy_policy">Terms And Privacy Policy</string>
+    <string name="agree">Agree</string>
+    <string name="wrong_number">Wrong number?</string>
+    <string name="if_you_dont_get">if you don\'t get SMS then</string>
+    <string name="enter">Enter</string>
+    <string name="slogen_hindi">"कृपया ऐसी भाषा चुनें जिसे आप आराम से पढ़ और समझ सकें "</string>
+</resources>

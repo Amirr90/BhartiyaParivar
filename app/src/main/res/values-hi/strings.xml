@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">भारतीय परिवार</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="terms_condition">हमारे नियम और शर्तें टेम्प्लेट आपको अपने स्वयं के कस्टम नियम और शर्तें समझौते बनाने के साथ शुरू करेंगे। यह नियम और शर्तें टेम्प्लेट आपकी वेबसाइट या मोबाइल ऐप के लिए डाउनलोड और उपयोग करने के लिए स्वतंत्र है।</string>
+    <string name="verify_number">अपना फोन नम्बर सत्यापित करें</string>
+    <string name="send_msg_string">हम आपके फ़ोन नंबर को सत्यापित करने के लिए एक एसएमएस संदेश भेजेंगे। अपना देश कोड और फ़ोन नंबर दर्ज करें</string>
+    <string name="phone_number">फ़ोन नंबर</string>
+    <string name="next">आगे</string>
+    <string name="waiting_otp_text">प्रतीक्षा में स्वचालित रूप से भेजे गए एक एसएमएस का पता लगाने के लिए</string>
+    <string name="enter_otp_string">4-अंकीय कोड दर्ज करें</string>
+    <string name="give_miss_call">हमें सत्यापित करने के लिए एक मिस कॉल दें</string>
+    <string name="call_me">मुझे फ़ोन करो</string>
+    <string name="name">आपका नाम</string>
+    <string name="age">आपकी उम्र</string>
+    <string name="gender">तुम्हारा लिंग</string>
+    <string name="pin_code">आपका पोस्टल पिन कोड (6 अंक)</string>
+    <string name="proffession">आपका व्यवसाय</string>
+    <string name="save">सहेजें</string>
+    <string name="terms_and_privacy_policy">शर्तें और गोपनीयता नीति</string>
+    <string name="agree">इस बात से सहमत</string>
+    <string name="wrong_number">गलत संख्या ?</string>
+    <string name="if_you_dont_get">अगर आपको एसएमएस नहीं मिलता है तो</string>
+    <string name="enter">दर्ज</string>
+    <string name="slogen_hindi">कृपया ऐसी भाषा चुनें जिसे आप आराम से पढ़ और समझ सकें </string>
+</resources>
