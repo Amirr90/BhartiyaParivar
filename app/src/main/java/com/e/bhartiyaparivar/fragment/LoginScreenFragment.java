@@ -27,8 +27,10 @@ import com.e.bhartiyaparivar.utils.ApiUtils;
 import java.util.ArrayList;
 
 import static com.e.bhartiyaparivar.utils.Utils.MOBILE_NUMBER_KEY;
+import static com.e.bhartiyaparivar.utils.Utils.hideKeyboard;
 
-public class LoginScreenFragment extends Fragment {
+public class
+LoginScreenFragment extends Fragment {
 
     FragmentLoginScreenBinding loginScreenBinding;
     NavController navController;
@@ -69,8 +71,11 @@ public class LoginScreenFragment extends Fragment {
 
     private void sendOTP(final String mobileNumber) {
 
-        dialog.setMessage("Sending OTP...");
-        SendOTP OTPModel = new SendOTP(mobileNumber);
+        hideKeyboard(requireActivity());
+        dialog.setMessage("Sending OTP to +91" + mobileNumber);
+        dialog.show();
+        SendOTP OTPModel = new SendOTP();
+        OTPModel.setMobileNo(mobileNumber);
 
         ApiUtils.generateOTP(OTPModel, new ApiInterface() {
             @Override

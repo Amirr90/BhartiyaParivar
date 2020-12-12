@@ -12,7 +12,7 @@
     <string name="give_miss_call">Give us a miss call to verify</string>
     <string name="call_me">Call me</string>
     <string name="name">Your Name</string>
-    <string name="age">Your Age</string>
+    <string name="age">Your Age (in years)</string>
     <string name="gender">Your Gender</string>
     <string name="pin_code">Your Postal Pin Code(6 Digit)</string>
     <string name="proffession">Your Profession</string>
